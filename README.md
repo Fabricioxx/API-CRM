@@ -99,6 +99,16 @@ dotnet add package Microsoft.Data.SqlClient
 ```````
 
 
+* JWT
+
+``````
+dotnet add package System.IdentityModel.Tokens.Jwt
+
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+``````
+
+
 
 
 
