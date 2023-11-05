@@ -50,10 +50,53 @@ dotnet ef database update
 ````
   
   
+-----------------------------------------------------------
 
 
+ * Estrutura base de um Controller api asp.net
 
 
+ ````csharp
+
+   using Microsoft.AspNetCore.Mvc;
+
+    namespace API_CRM.Controllers
+    {
+
+    [ApiController]
+    [Route("api/clientes")]
+    public class ClientesController : ControllerBase
+    {
+       
+      
+
+
+    }
+}
+ 
+ ````
+
+
+* Entity Framework Core: ( bibliotecas banco de dados)
+
+```````
+dotnet add package Microsoft.EntityFrameworkCore <- biblioteca principal
+
+dotnet add package Microsoft.EntityFrameworkCore.SQLite <- provedor de banco de dados específico (por exemplo, SQL Server, SQLite, PostgreSQL, etc.)
+
+dotnet add package Microsoft.EntityFrameworkCore.Design <- executar migrações e criar o contexto de banco de dados
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools <- permitem executar migrações e outras operações no projeto
+
+
+```````
+
+* Pacote do banco de dados (opcional): Se você estiver usando um banco de dados específico, pode ser necessário adicionar o pacote do banco de dados. Por exemplo, para o SQL Server:
+
+```````
+dotnet add package Microsoft.Data.SqlClient
+
+```````
 
 
 
