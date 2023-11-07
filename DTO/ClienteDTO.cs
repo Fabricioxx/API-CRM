@@ -9,6 +9,16 @@ namespace API_CRM.DTO
 {
     public class ClienteDTO
     {
-        
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public int Cpf { get; set; }
+
+        public DateTime DataNascimento { get; set; }
+
+        public string Email { get; set; }
+
+        public int Telefone { get; set; }
     }
 }
