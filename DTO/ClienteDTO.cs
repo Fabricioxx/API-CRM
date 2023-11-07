@@ -13,7 +13,7 @@ namespace API_CRM.DTO
 
         public string LastName { get; set; }
 
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
 
         public DateTime DataNascimento { get; set; }
 
